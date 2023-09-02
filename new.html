@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          height: 100vh; /*화면높이*/
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .box{
+          background-color: black;
+          color:white;  
+          width:300px;
+          height: 300px;
+          border-radius: 50%; /*모서리*/
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 50px; /*글자크기*/
+          animation-name: love; /*애니메이션 이름*/
+          animation-duration: 3s; /*애니메이션 스피드*/
+          animation-fill-mode: forwards;   /*마지막 애니메이션 모양으로 유지해라*/
+        }
+
+        @keyframes love {
+            0%{
+                transform: translateX(-100vw) rotate(0deg) scale(0.5);
+                background-color: pink;
+            }
+            100%{
+                transform: translateX(0) rotate(360deg) scale(1.5);
+                background-color: red;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">빵쌤</div>
+</body>
+</html>
